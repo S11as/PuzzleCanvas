@@ -153,7 +153,6 @@ class Component {
             if (currentTact < Component.tact - 1) {
                 setTimeout(reDraw, Component.frameTime);
                 currentTact++;
-                console.log("shifting", dX, dY);
             } else {
                 component.shift(-dX * (Component.tact), -dY * (Component.tact));
                 // component.move(oldX, oldY);
